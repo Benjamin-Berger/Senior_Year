@@ -1,0 +1,37 @@
+Programming 4: Bug Hunting
+
+Instructor: Guanhua Yan
+Due date: December 1, 2015 (two days of grace period).
+
+The goal of this project assignment is to learn how to find software
+vulnerabilities like a computer security professional, or a real
+hacker. In this project, you will use open-source fuzzers to look for
+exploits in a software. For instance, you can try the VLC media
+player, which can be downloaded from
+http://www.videolan.org/vlc/index.html. You can download the list of
+fuzzers from the website:
+http://www.cs.binghamton.edu/~ghyan/fuzzing/. These are the steps you
+can take:
+
+Step 1: Specify a target program you want to exploit, and then try to
+find the appropriate fuzzer for it (hint: zzuf is an easy one to use).
+
+Step 2: Choose an initial file and run the fuzzer against the software
+until it crashes, which generates a core dump, or for a certain period
+(e.g., 1 hour).  
+
+Step 3: Use CERT Exploitable (https://github.com/jfoote/exploitable/)
+to check whether the core dump is exploitable.  
+
+Step 4 (Optional): If there are some interesting exploits found from
+this assignment, they will be disclosed with proper procedures and
+then enjoy a few days of fame.  
+
+Step 5: Write a final report on how you have made the fuzzer work and
+what your results are. Include pictures to prove that you have made
+the fuzzer run.
+
+Bonus points: For any extra fuzzer (up to three), you will get 10
+bonus points. To encourage diversity of the fuzzers being used, if a
+student uses a fuzzer that none of the others have used, 10 extra
+points will also be given.
